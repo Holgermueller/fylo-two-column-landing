@@ -98,9 +98,9 @@ html {
   width: 100vw;
 }
 
-h1,
 h2,
-header {
+header,
+input {
   font-family: "Raleway", sans-serif;
 }
 
@@ -118,24 +118,27 @@ ul {
 }
 
 header,
-main,
 footer {
   width: 90%;
   margin: auto;
 }
 
 main {
-  display: grid;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 section {
-  margin: 5% 0;
+  margin: auto;
 }
 
 /* Header */
 
 header {
-  margin-top: 5%;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
 }
 
 header a {
@@ -160,12 +163,117 @@ nav a {
   margin-left: 3%;
 }
 
+/* Main */
+
 /* Section One */
 
 .section-one {
-  margin: 5% 0;
+  text-align: center;
+  color: hsl(243, 87%, 12%);
+  width: 90%;
+}
+
+.section-one h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.29rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  line-height: 2rem;
+}
+
+.section-one p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-one form {
+  margin-bottom: 3rem;
+}
+
+.section-one form input {
+  width: 100%;
+}
+
+.section-one form input[type="text"],
+.section-one form input[type="button"] {
+  padding: 16px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.section-one form input[type="text"] {
+  border: 1px solid hsl(243, 87%, 12%);
+}
+
+.section-one form input[type="button"] {
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* Section Two */
+
+.section-two {
+  background-color: hsl(240, 75%, 98%);
+  padding-bottom: 5%;
+}
+
+.section-two h2 {
+  color: hsl(243, 87%, 12%);
+  font-size: 1rem;
   text-align: center;
 }
+
+.section-two p {
+  color: hsl(238, 22%, 44%);
+  width: 90%;
+  font-size: 0.9rem;
+  margin: 5% auto;
+  line-height: 1.5rem;
+}
+
+.link-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.section-two a {
+  display: inline-block;
+  border-bottom: 1px solid hsl(169, 46%, 43%);
+  color: hsl(169, 46%, 43%);
+}
+
+.section-two a img {
+  margin-left: 8px;
+  border: none;
+  float: right;
+  vertical-align: middle;
+}
+
+.testimonial-card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 85%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.testimonial-card .avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.name-container p {
+  margin: 0;
+}
+
+.name-container p:first-of-type {
+  font-weight: 700;
+}
+
+/* Footer */
 
 footer {
   text-align: left;
