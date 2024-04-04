@@ -89,16 +89,18 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* My styles */
+/* Global */
 
 body,
 html {
   margin: 0;
   padding: 0;
+  width: 100vw;
 }
 
 h1,
-h2 {
+h2,
+header {
   font-family: "Raleway", sans-serif;
 }
 
@@ -110,17 +112,63 @@ a {
   text-decoration: none;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-}
-
-header ul {
+ul {
   list-style-type: none;
+  padding: 0;
 }
 
-nav ul li {
+header,
+main,
+footer {
+  width: 90%;
+  margin: auto;
+}
+
+main {
+  display: grid;
+}
+
+section {
+  margin: 5% 0;
+}
+
+/* Header */
+
+header {
+  margin-top: 5%;
+}
+
+header a {
+  width: max-content;
+}
+
+header a img {
+  height: 25%;
+  width: 25%;
+  float: left;
+}
+
+header nav {
+  width: 75%;
+  text-align: right;
+  float: right;
   display: inline;
+  font-size: 0.75rem;
+}
+
+nav a {
+  margin-left: 3%;
+}
+
+/* Section One */
+
+.section-one {
+  margin: 5% 0;
+  text-align: center;
+}
+
+footer {
+  text-align: left;
 }
 
 .attribution {
