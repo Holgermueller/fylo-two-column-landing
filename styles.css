@@ -90,7 +90,6 @@ textarea:not([rows]) {
 }
 
 /* Global */
-
 body,
 html {
   margin: 0;
@@ -203,6 +202,10 @@ nav a {
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.desktop-curve {
+  display: none;
 }
 
 /* Section Two */
@@ -364,4 +367,43 @@ footer p a img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+  header nav a {
+    font-size: 1rem;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  .section-one,
+  .section-two {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .section-one img,
+  .section-one .text-container,
+  .section-two img,
+  .section-two .text-container {
+    width: 50%;
+  }
+
+  .mobile-curve {
+    display: none;
+  }
+
+  .desktop-curve {
+    display: block;
+    padding-top: 10%;
+  }
+
+  .section-three {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
 }
