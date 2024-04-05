@@ -117,19 +117,38 @@ ul {
   padding: 0;
 }
 
-header,
-footer {
-  width: 90%;
-  margin: auto;
-}
-
 main {
   margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 section {
   margin: auto;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 3rem;
+}
+
+form input {
+  width: 100%;
+}
+
+form input[type="text"],
+form input[type="button"] {
+  padding: 16px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+form input[type="text"] {
+  border: 1px solid hsl(243, 87%, 12%);
+}
+
+form input[type="button"] {
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(0, 0%, 100%);
 }
 
 /* Header */
@@ -166,7 +185,6 @@ nav a {
 /* Main */
 
 /* Section One */
-
 .section-one {
   text-align: center;
   color: hsl(243, 87%, 12%);
@@ -187,33 +205,7 @@ nav a {
   margin-bottom: 2rem;
 }
 
-.section-one form {
-  margin-bottom: 3rem;
-}
-
-.section-one form input {
-  width: 100%;
-}
-
-.section-one form input[type="text"],
-.section-one form input[type="button"] {
-  padding: 16px;
-  margin-bottom: 8px;
-  border-radius: 5px;
-}
-
-.section-one form input[type="text"] {
-  border: 1px solid hsl(243, 87%, 12%);
-}
-
-.section-one form input[type="button"] {
-  border: none;
-  background-color: hsl(224, 93%, 58%);
-  color: hsl(0, 0%, 100%);
-}
-
 /* Section Two */
-
 .section-two {
   background-color: hsl(240, 75%, 98%);
   padding-bottom: 5%;
@@ -259,10 +251,22 @@ nav a {
   padding: 2rem;
 }
 
+.testimonial-card img {
+  margin-left: 15px;
+}
+
 .testimonial-card .avatar {
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  float: left;
+  margin-right: 16px;
+  margin-right: 15px;
+}
+
+.name-container {
+  position: relative;
+  width: 100%;
 }
 
 .name-container p {
@@ -273,15 +277,54 @@ nav a {
   font-weight: 700;
 }
 
-/* Footer */
+/* Section three */
+.section-three {
+  padding-top: 2%;
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);
+  text-align: center;
+}
 
+.section-three h2 {
+  font-size: 1.25rem;
+  margin-top: 10%;
+}
+
+.section-three p,
+.section-three form {
+  width: 85%;
+  margin: 5% auto;
+}
+
+.section-three p {
+  line-height: 1.5rem;
+}
+
+.section-three form {
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+}
+
+/* Footer */
 footer {
+  position: relative;
   text-align: left;
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(0, 0%, 100%);
+  padding-top: 10%;
+  margin-top: -10%;
+  padding-left: 5%;
+}
+
+footer .logo {
+  margin-top: 2%;
+  filter: brightness(0) invert(1);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 8px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
