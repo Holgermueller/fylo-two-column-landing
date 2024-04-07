@@ -24,8 +24,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="styles-reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="public/styles.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
@@ -146,51 +145,56 @@
     <footer>
       <img class="logo" src="images/logo.svg" alt="logo" />
 
-      <div class="link-container">
-        <p>
-          <a href="#"
-            ><img src="images/icon-phone.svg" alt="Phone Icon" />Phone:
-            +1-543-123-4567</a
-          >
-        </p>
+      <div class="container-for-all-footer-links">
+        <div class="contacts-container">
+          <div class="contact-container">
+            <p>
+              <a href="#"
+                ><img src="images/icon-phone.svg" alt="Phone Icon" />Phone:
+                +1-543-123-4567</a
+              >
+            </p>
+          </div>
+
+          <div class="contact-container">
+            <p>
+              <a href="#"
+                ><img
+                  src="images/icon-email.svg"
+                  alt="Email icon"
+                />example@fylo.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <nav class="footer-nav-one">
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Jobs</a></p>
+          <p><a href="#">Press</a></p>
+          <p><a href="#">Blog</a></p>
+        </nav>
+
+        <nav class="footer-nav-two">
+          <p><a href="#">Contact Us</a></p>
+          <p><a href="#">Terms</a></p>
+          <p><a href="#">Privacy</a></p>
+        </nav>
+
+        <div class="socials-array">
+          <a href="#" aria-label="Facebook profile"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+
+          <a href="#" aria-label="Twitter profile"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+
+          <a href="#" aria-label="Instagram profile"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
       </div>
-      <div class="link-container">
-        <p>
-          <a href="#"
-            ><img
-              src="images/icon-email.svg"
-              alt="Email icon"
-            />example@fylo.com</a
-          >
-        </p>
-      </div>
-
-      <nav class="footer-nav-one">
-        <p><a href="#">About Us</a></p>
-        <p><a href="#">Jobs</a></p>
-        <p><a href="#">Press</a></p>
-        <p><a href="#">Blog</a></p>
-      </nav>
-      <nav class="footer-nav-two">
-        <p><a href="#">Contact Us</a></p>
-        <p><a href="#">Terms</a></p>
-        <p><a href="#">Privacy</a></p>
-      </nav>
-
-      <div class="socials-array">
-        <a href="#" aria-label="Facebook profile"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-
-        <a href="#" aria-label="Twitter profile"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
-
-        <a href="#" aria-label="Instagram profile"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-      </div>
-
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

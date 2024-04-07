@@ -324,7 +324,7 @@ footer .logo {
   filter: brightness(0) invert(1);
 }
 
-footer .link-container {
+footer .contact-container {
   display: flex;
   align-items: center;
 }
@@ -364,18 +364,20 @@ footer p a img {
   font-size: 11px;
   text-align: center;
   padding: 8px;
+  background-color: hsl(243, 87%, 12%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 600px) {
-  header nav a {
-    font-size: 1rem;
+  header nav {
+    padding-top: 2%;
+    padding-right: 2%;
   }
 
-  header img {
-    width: 20%;
+  header nav a {
+    font-size: 1rem;
   }
 
   .section-one,
@@ -464,15 +466,41 @@ footer p a img {
     flex-direction: row;
     text-align: left;
     margin-bottom: 5%;
+    padding-right: 5%;
   }
 
   .section-three h2 {
     font-size: 1.75rem;
     width: 90%;
     margin: 5% auto;
+    padding-left: 2%;
   }
 
   .section-three form input[type="button"] {
     width: 50%;
+  }
+
+  footer {
+    padding-right: 5%;
+  }
+
+  footer img {
+    margin-top: 0;
+  }
+
+  .container-for-all-footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5%;
+  }
+
+  footer .contact-container {
+    text-align: left;
+  }
+
+  .footer-nav-one,
+  .footer-nav-two {
+    padding-top: 0;
   }
 }
